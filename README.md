@@ -1,6 +1,6 @@
 # 🌀 ueXRP: The User-Mode eXtended eXpress Resubmission Path
 
-**SiliconLanguage: The Monadic Stack. Pure Logic. Bare Metal.**
+**SiliconLanguage: The Monadic Stack. Neural Compilation. Bare Metal.**
 
 **ueXRP** is an architectural "black hole" designed to trap legacy, unmodified POSIX applications and seamlessly drag them across the "Monadic Horizon" into a zero-kernel, hardware-accelerated data plane. 
 
