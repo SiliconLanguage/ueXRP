@@ -1,0 +1,24 @@
+[package]
+name = "uxrp-ebpf"
+version = "0.1.0"
+edition = "2021"
+description = "uXRP eBPF program loader using Aya – loads and pins a BPF_PROG_TYPE_XRP program"
+license = "BSD-2-Clause-Patent"
+
+[[bin]]
+name = "uxrp-loader"
+path = "src/main.rs"
+
+[dependencies]
+# Aya: pure-Rust eBPF loader and runtime (user-space side)
+aya          = { version = "0.12", features = ["async_tokio"] }
+aya-log      = { version = "0.2" }
+tokio        = { version = "1",   features = ["rt", "rt-multi-thread", "macros", "signal"] }
+anyhow       = "1"
+clap         = { version = "4", features = ["derive"] }
+log          = "0.4"
+env_logger   = "0.11"
+
+[lib]
+name = "uxrp_ebpf"
+path = "src/lib.rs"
